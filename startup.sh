@@ -1,4 +1,5 @@
 #!/bin/bash
+gem install sinatra
 if [ "$RACK_ENV" == "production" ]; 
 then 
   bundle install --without development test
