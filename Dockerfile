@@ -10,7 +10,7 @@ RUN mkdir -p /usr/src/app
 ADD startup.sh /
 
 WORKDIR /usr/src/app
-VOLUME /usr/src/app
+
 EXPOSE 80
 
 CMD ["/bin/bash", "/startup.sh"]

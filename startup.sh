@@ -7,7 +7,7 @@ then
 else
   bundle install
   gem install shotgun
-  shotgun $MAIN_APP_FILE -p 80 -o '0.0.0.0'
+  shotgun -I /usr/src/app $MAIN_APP_FILE -p 80 -o '0.0.0.0'
 fi
 
 
