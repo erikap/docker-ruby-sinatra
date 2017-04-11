@@ -1,8 +1,8 @@
-#Ruby Sinatra docker
+# Ruby Sinatra docker
 
 Docker for hosting [Sinatra](http://www.sinatrarb.com) apps
 
-##Running your Sinatra app
+## Running your Sinatra app
     docker run --name my-sinatra-app \
         -p 80:80 \
         -v /path/to/sinatra/app:/usr/src/app \
