@@ -1,12 +1,11 @@
-#Ruby Sinatra docker
+# Ruby Sinatra docker
 
 Docker for hosting [Sinatra](http://www.sinatrarb.com) apps
 
-##Running your Sinatra app
+## Running your Sinatra app
     docker run --name my-sinatra-app \
         -p 80:80 \
         -v /path/to/sinatra/app:/usr/src/app \
-        -e MAIN_APP_FILE=my-app.rb \
         -d erikap/ruby-sinatra
         
 The Docker image exposes port 80.
@@ -20,3 +19,4 @@ The image uses [Sinatra Reloader](http://www.sinatrarb.com/contrib/reloader) for
 ```
 require 'sinatra/reloader' if development?
 ```
+
