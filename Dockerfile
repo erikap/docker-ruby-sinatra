@@ -1,6 +1,6 @@
-FROM ruby:2.3
+FROM ruby:2.5
 
-MAINTAINER Erika Pauwels <erika.pauwels@gmail.com>
+LABEL maintainer="erika.pauwels@gmail.com"
 
 ENV RACK_ENV production
 ENV MAIN_APP_FILE web.rb
