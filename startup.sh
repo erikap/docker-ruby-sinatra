@@ -9,8 +9,7 @@ else
   then
     rspec
   else
-    gem install sinatra-contrib
-    ruby $MAIN_APP_FILE -p 80 -o '0.0.0.0'
+    rerun --background -- ruby $MAIN_APP_FILE -p 80 -o '0.0.0.0'
   fi
 fi
 
