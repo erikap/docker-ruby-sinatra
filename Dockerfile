@@ -1,4 +1,4 @@
-FROM ruby:2.5
+FROM ruby:2.7
 
 LABEL maintainer="erika.pauwels@gmail.com"
 
