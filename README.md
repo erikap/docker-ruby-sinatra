@@ -20,3 +20,4 @@ The image uses [Sinatra Reloader](http://www.sinatrarb.com/contrib/reloader) for
 require 'sinatra/reloader' if development?
 ```
 
+To ensure that stopping of the container happens instantly, start docker with the `--init` option or use `init: true` when using a `docker-compose.yml` file.
