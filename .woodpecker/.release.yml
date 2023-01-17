@@ -1,0 +1,12 @@
+pipeline:
+  build-and-push:
+    image: plugins/docker
+    settings:
+      repo: "${CI_REPO_OWNER}/${CI_REPO_NAME##docker-}"
+      tags: ${CI_REPO_TAG##v}
+    secrets: [ docker_username, docker_password ]
+    when:
+      event: tag
+      tag: v*
+branches:
+  - master
